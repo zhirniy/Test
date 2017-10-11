@@ -24,7 +24,7 @@ const CalcPage = React.createClass({
     result = 0;
     }
     else{
-    result = Math.abs(this.state.off - this.state.on);
+    result = Math.round(Math.abs(this.state.off - this.state.on));
     }
             return (
 
