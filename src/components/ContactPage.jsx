@@ -25,7 +25,7 @@ const ContactPage = React.createClass({
                           <h4>ing2758@gmail.com</h4>
                          </Panel>
                          <Panel header="Facebook" eventKey="2" bsStyle="primary">
-                          <a href="https:/www.facebook.com/profile.php?id=100001779947900">
+                          <a href="https://www.facebook.com/profile.php?id=100001779947900">
                           <img  alt="Facebook" src='img/facebook.png'/>
                           </a>
                           <br/>
