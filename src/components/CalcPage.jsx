@@ -39,7 +39,7 @@ const CalcPage = React.createClass({
                 <h1>Calculator</h1>
                 <label>Data on</label> <input type="date" value={this.state.value} onChange={this.setOn}/><br/><br/>
                 <label>Data off</label><input type="date" value={this.state.value} onChange={this.setOff}/><br/><br/>
-                <label>Result, days:</label><span><b>{result}</b></span>
+                <label>Result, days:</label><input size="16" disabled type="text" value = {result}/>
 
                 </div>
                 </Col>
