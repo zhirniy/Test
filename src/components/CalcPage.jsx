@@ -3,18 +3,29 @@ import {Carousel, Grid, Row, Col, Pagination, Tabs, Tab} from 'react-bootstrap';
 
 var NumericInput = require('react-numeric-input');
 const CalcPage = React.createClass({
-   getInitialState: function() {
+     getInitialState: function() {
     return {
-      price: 0,
-      offer: 0,
-      result: 0
+      on: 0,
+      off: 0
     };
   },
-   caclResult: function(event) {
 
-    this.setState({result: (new Date(event.target.value.replace(/-/g, ","))).getTime()/(1000*60*60*24) });
+  setOn: function(event) {
+    this.setState({on: (new Date(event.target.value.replace(/-/g, ","))).getTime()/(1000*60*60*24)});
   },
+
+  setOff: function(event) {
+    this.setState({off: (new Date(event.target.value.replace(/-/g, ","))).getTime()/(1000*60*60*24)});
+  },
+  
     render() {
+    let result=0;
+    if(!this.state.off || !this.state.off){
+    result = 0;
+    }
+    else{
+    result = Math.abs(this.state.off - this.state.on);
+    }
             return (
 
       
@@ -26,9 +37,9 @@ const CalcPage = React.createClass({
                 <Col md={4}>
                 <div id="v">
                 <h1>Calculator</h1>
-                <label>Data on</label> <input type="date" value={this.state.value} onChange={this.caclResult}/><br/><br/>
-                <label>Data off</label><input type="date" value={this.state.value} onChange={this.caclResult}/><br/><br/>
-                <label>Result</label><span>Итого: {this.state.result}</span>/>
+                <label>Data on</label> <input type="date" value={this.state.value} onChange={this.setOn}/><br/><br/>
+                <label>Data off</label><input type="date" value={this.state.value} onChange={this.setOff}/><br/><br/>
+                <label>Result, days:</label><span><b>{result}</b></span>
 
                 </div>
                 </Col>
