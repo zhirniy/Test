@@ -1,0 +1,170 @@
+@media screen and (max-width: 1280px){
+body{
+  background-image: "none";
+  background-size: 100%;
+}
+
+.navbar {
+ 	
+ 	font-size:13pt;
+ }	
+
+ .navbar-inverse {
+ 	background-color:black;
+ 	margin-bottom: 0%;
+ }
+
+
+ .container {
+     padding: 0px; 
+     margin-right: auto;
+     margin-left: auto;
+     width: 75%;
+     
+  }   
+
+.col-md-7 {
+overflow-y: auto;
+height: 400px;
+}
+     
+
+
+#z,#me, #v,#m,#j,#u,#n,#s,#uncontrolled-tab-example{
+	margin-top: 2%;
+  margin-bottom: 10%;
+ 
+  
+  
+}
+
+.navbar-nav>li>a {
+     padding-top: 5px; 
+     padding-bottom: 5px; 
+     line-height: 15px; 
+}
+
+.nav>li>a {
+ position: static; 
+ display: block; 
+ padding: 5px; 
+}
+
+
+.nav-tabs{
+    border-bottom: none;
+}
+
+
+
+.nav-tabs>li>a{
+color: white;
+font-size:12pt; 
+background-color: black;
+border: 1px solid black; 
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+   top:10px;
+    color: lightblue;
+    cursor: default;
+   background-color: #2F4F4F;
+    border: 3px solid black;
+    border-bottom-color: none;
+    font-size:12pt;
+}
+.navbar-inverse .navbar-nav>li>a{
+  color: white;
+}
+}
+
+@media screen and (min-width: 1281px){
+body{
+  background-image: "none";
+  background-size: 100%;
+}
+
+.navbar {
+  
+  font-size:13pt;
+  color:white;
+ }  
+
+ .navbar-inverse {
+  background-color:black;
+  margin-bottom: 0%;
+  color:white;
+ }
+
+
+ .container {
+     padding: 0px; 
+     margin-right: auto;
+     margin-left: auto;
+     width: 75%;
+     
+  }   
+
+.col-md-7 {
+overflow-y: auto;
+height: 750px;
+}
+     
+
+
+#z,#me, #v,#m,#j,#u,#n,#s,#uncontrolled-tab-example{
+  margin-top: 2%;
+  margin-bottom: 10%;
+ 
+  
+  
+}
+
+.navbar-nav>li>a {
+     padding-top: 5px; 
+     padding-bottom: 5px; 
+     line-height: 15px; 
+     color:white;
+}
+
+.nav>li>a {
+ position: static; 
+ display: block; 
+ padding: 5px; 
+ color:white;
+}
+
+
+.nav-tabs{
+    border-bottom: none;
+}
+
+
+
+.nav-tabs>li>a{
+color: white;
+font-size:12pt; 
+background-color: black;
+border: 1px solid black; 
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+   top:10px;
+    color: lightblue;
+    cursor: default;
+   background-color: #2F4F4F;
+    border: 3px solid black;
+    border-bottom-color: none;
+    font-size:12pt;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color: white;
+}
+}
+
+
+ 
+
+
+

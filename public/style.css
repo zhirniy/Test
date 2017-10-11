@@ -1,0 +1,7 @@
+@import "bootstrap.css";
+ .navbar navbar-inverse{
+ 	margin-bottom: 5px;
+ }
+ body{
+ 	font-style:italic;
+ }
