@@ -19,13 +19,14 @@ const ContactPage = React.createClass({
                 </div>
                 
                   <Accordion>
+
                          <Panel header="Email" eventKey="1" bsStyle="primary">
                          <img  alt="Email" src='img/mail.png'/>
                           <h4>denis_777@ukr.net</h4>
                           <h4>ing2758@gmail.com</h4>
                          </Panel>
                          <Panel header="Facebook" eventKey="2" bsStyle="primary">
-                          <a href="https:/www.facebook.com/profile.php?id=100001779947900">
+                          <a href="https://www.facebook.com/profile.php?id=100001779947900">
                           <img  alt="Facebook" src='img/facebook.png'/>
                           </a>
                           <br/>

@@ -45947,7 +45947,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: silver;\n}\nh1 {\n  text-align: center;\n}\n.LoginPage__image {\n  width: 100%;\n  margin: 0%;\n  padding: 0%;\n}\np {\n  font-style: italic;\n  font-size: 12pt;\n  text-indent: 35px;\n  text-align: left;\n  color: black;\n  margin: 0%;\n  padding: 0%;\n}\nTabs {\n  color: \"white\";\n}\n.footer {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  color: lightblue;\n  border: 1px solid lightblue;\n  background-color: black;\n}\n.footer_g {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  color: orange;\n  border: 1px solid lightblue;\n  background-color: black;\n}\n.footer_k {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  color: gray;\n  border: 1px solid lightblue;\n  background-color: black;\n}\n.footer_p {\n  text-align: center;\n  font-size: 16pt;\n  font-style: normal;\n  color: white;\n}\n.sun {\n  width: 100%;\n  min-width: 100%;\n  max-width: 100%;\n  margin-top: 0%;\n}\nimg {\n  float: left;\n  margin-right: 5%;\n  padding: 0%;\n}\ninput,\nspan {\n  float: right;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: silver;\n}\nh1 {\n  text-align: center;\n}\n.LoginPage__image {\n  width: 100%;\n  margin: 0%;\n  padding: 0%;\n}\np {\n  font-style: italic;\n  font-size: 12pt;\n  text-indent: 35px;\n  text-align: left;\n  color: black;\n  margin: 0%;\n  padding: 0%;\n}\nTabs {\n  color: \"white\";\n}\n.footer {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  color: lightblue;\n  border: 1px solid lightblue;\n  background-color: black;\n}\n.footer_g {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  color: orange;\n  border: 1px solid lightblue;\n  background-color: black;\n}\n.footer_k {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  color: gray;\n  border: 1px solid lightblue;\n  background-color: black;\n}\n.footer_p {\n  text-align: center;\n  font-size: 16pt;\n  font-style: normal;\n  color: white;\n}\n.sun {\n  width: 100%;\n  min-width: 100%;\n  max-width: 100%;\n  margin-top: 0%;\n}\nimg {\n  float: left;\n  margin-right: 5%;\n  padding: 0%;\n}\ninput {\n  float: right;\n}\n", ""]);
 
 	// exports
 
@@ -46304,7 +46304,7 @@
 	    if (!this.state.off || !this.state.off) {
 	      result = 0;
 	    } else {
-	      result = Math.abs(this.state.off - this.state.on);
+	      result = Math.round(Math.abs(this.state.off - this.state.on));
 	    }
 	    return _react2['default'].createElement(
 	      'div',
@@ -46333,7 +46333,7 @@
 	                'Data on'
 	              ),
 	              ' ',
-	              _react2['default'].createElement('input', { type: 'date', value: this.state.value, onChange: this.setOn }),
+	              _react2['default'].createElement('input', { type: 'date', placeholder: '2017-01-01', value: this.state.value, onChange: this.setOn }),
 	              _react2['default'].createElement('br', null),
 	              _react2['default'].createElement('br', null),
 	              _react2['default'].createElement(
@@ -46341,7 +46341,7 @@
 	                null,
 	                'Data off'
 	              ),
-	              _react2['default'].createElement('input', { type: 'date', value: this.state.value, onChange: this.setOff }),
+	              _react2['default'].createElement('input', { type: 'date', placeholder: '2017-01-01', value: this.state.value, onChange: this.setOff }),
 	              _react2['default'].createElement('br', null),
 	              _react2['default'].createElement('br', null),
 	              _react2['default'].createElement(
@@ -47424,7 +47424,7 @@
 	                { header: 'Facebook', eventKey: '2', bsStyle: 'primary' },
 	                _react2['default'].createElement(
 	                  'a',
-	                  { href: 'https:/www.facebook.com/profile.php?id=100001779947900' },
+	                  { href: 'https://www.facebook.com/profile.php?id=100001779947900' },
 	                  _react2['default'].createElement('img', { alt: 'Facebook', src: 'img/facebook.png' })
 	                ),
 	                _react2['default'].createElement('br', null),

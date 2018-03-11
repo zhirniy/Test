@@ -24,7 +24,7 @@ const CalcPage = React.createClass({
     result = 0;
     }
     else{
-    result = Math.abs(this.state.off - this.state.on);
+    result = Math.round(Math.abs(this.state.off - this.state.on));
     }
             return (
 
@@ -37,8 +37,8 @@ const CalcPage = React.createClass({
                 <Col md={4}>
                 <div id="v">
                 <h1>Calculator</h1>
-                <label>Data on</label> <input type="date" value={this.state.value} onChange={this.setOn}/><br/><br/>
-                <label>Data off</label><input type="date" value={this.state.value} onChange={this.setOff}/><br/><br/>
+                <label>Data on</label> <input type="date" placeholder="2017-01-01" value={this.state.value} onChange={this.setOn}/><br/><br/>
+                <label>Data off</label><input type="date" placeholder="2017-01-01" value={this.state.value} onChange={this.setOff}/><br/><br/>
                 <label>Result, days:</label><input size="16" disabled type="text" value = {result}/>
 
                 </div>
